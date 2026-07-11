@@ -1,0 +1,15 @@
+{
+	"name": "DATAFACTORY-BLOB-TO-ADLSGENTWO",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "31a6f3cd-a73e-4bb2-b884-9a6655e36519",
+		"tenantId": "c76db2c7-38c7-4972-937e-dd338746471c"
+	}
+}

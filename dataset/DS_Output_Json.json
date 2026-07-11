@@ -1,0 +1,19 @@
+{
+	"name": "DS_Output_Json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Output_Jsons",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "json",
+				"fileSystem": "output"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,12 @@
+{
+	"name": "LS_OUTPUT_JSON",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlsstoragefordemo.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEVEOTk0RkM3LTJBMTEtNDMzNy1BQzg1LUZEMTU1QThDMTFGOF85ZTFlNjE5ZC1lOGY5LTRlYTgtODllMi05Y2I3OWQ0ZjI3OGQiDQp9"
+		}
+	}
+}
