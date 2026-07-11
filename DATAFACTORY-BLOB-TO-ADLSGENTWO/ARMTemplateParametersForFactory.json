@@ -1,0 +1,108 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DATAFACTORY-BLOB-TO-ADLSGENTWO"
+		},
+		"DS_Output_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_BINARY_MultiFileFormat_connectionString": {
+			"value": ""
+		},
+		"LS_BLOB_INPUT_CSV_Files_connectionString": {
+			"value": ""
+		},
+		"LS_BinaryTxt_connectionString": {
+			"value": ""
+		},
+		"LS_CSV_Allfiles_Check_connectionString": {
+			"value": ""
+		},
+		"LS_CSV_PARQUET_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_Filename_based_Copy_connectionString": {
+			"value": ""
+		},
+		"LS_Filenamebased_Copy_output_accountKey": {
+			"value": ""
+		},
+		"LS_INPUT_CSV_Filter_connectionString": {
+			"value": ""
+		},
+		"LS_INPUT_CSV_Filters_connectionString": {
+			"value": ""
+		},
+		"LS_JSON_CSV_TXTchildItem_connectionString": {
+			"value": ""
+		},
+		"LS_MULTIPLECSV_BLOB_connectionString": {
+			"value": ""
+		},
+		"LS_MULTIPLECSV_PARQUET_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_OUTPUT_JSON_accountKey": {
+			"value": ""
+		},
+		"LS_Output_Binary_accountKey": {
+			"value": ""
+		},
+		"LS_Output_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_Output_Jsons_accountKey": {
+			"value": ""
+		},
+		"LS_RestAPI_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_output_TXT_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"DS_Output_CSV_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_Filenamebased_Copy_output_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_MULTIPLECSV_PARQUET_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_OUTPUT_JSON_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_Output_Binary_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_Output_CSV_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_Output_Jsons_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_RestAPI_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_output_TXT_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "visionboardmigration"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "Maheshwaran"
+		}
+	}
+}
