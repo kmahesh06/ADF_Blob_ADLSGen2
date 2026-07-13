@@ -1,0 +1,12 @@
+{
+	"name": "DS_SQL_ADLS_MOVE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_ADLS_MOVE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
