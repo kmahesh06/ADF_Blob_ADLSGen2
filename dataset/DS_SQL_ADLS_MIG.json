@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"Table_Name ": {
+			"Table_Name": {
 				"type": "String"
 			}
 		},
