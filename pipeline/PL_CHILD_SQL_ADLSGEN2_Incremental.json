@@ -75,7 +75,24 @@
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
-								"enableStaging": false
+								"sink": {
+									"type": "ParquetSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "ParquetWriteSettings"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
 							},
 							"inputs": [
 								{
@@ -92,10 +109,16 @@
 										}
 									}
 								}
+							],
+							"outputs": [
+								{
+									"referenceName": "DS_SQL_ADLS_MIG",
+									"type": "DatasetReference"
+								}
 							]
 						},
 						{
-							"name": "Execute Pipeline1",
+							"name": "EXEC_UPDATE_WATERMARK",
 							"type": "ExecutePipeline",
 							"dependsOn": [
 								{
@@ -114,7 +137,21 @@
 									"referenceName": "PL_CHILD2_SP_SQL_ADLS",
 									"type": "PipelineReference"
 								},
-								"waitOnCompletion": true
+								"waitOnCompletion": true,
+								"parameters": {
+									"TableSchema": {
+										"value": "@pipeline().parameters.TableSchema",
+										"type": "Expression"
+									},
+									"TableName": {
+										"value": "@pipeline().parameters.TableName",
+										"type": "Expression"
+									},
+									"WatermarkColumn": {
+										"value": "@pipeline().parameters.WatermarkColumn",
+										"type": "Expression"
+									}
+								}
 							}
 						}
 					]
