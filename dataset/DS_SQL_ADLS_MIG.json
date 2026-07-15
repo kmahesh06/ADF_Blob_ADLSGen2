@@ -5,19 +5,16 @@
 			"referenceName": "LS_SQL_ADLS_MIGR",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Table_Name ": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@concat(dataset().TableName,'_',formatDateTime(utcNow(),'yyyyMMddHHmmss'),'.parquet')",
-					"type": "Expression"
-				},
-				"folderPath": {
-					"value": "@concat(dataset().TableName,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
-					"type": "Expression"
-				},
 				"fileSystem": "retaildw"
 			},
 			"compressionCodec": "snappy"
