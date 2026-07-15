@@ -113,7 +113,13 @@
 							"outputs": [
 								{
 									"referenceName": "DS_SQL_ADLS_MIG",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Table_Name ": {
+											"value": "@pipeline().parameters.TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						},
