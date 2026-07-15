@@ -11,6 +11,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'DS_Output_CSV'"
 		},
+		"LS_ADLS_SqlTable_Parquet_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_SqlTable_Parquet'"
+		},
 		"LS_BINARY_MultiFileFormat_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_BINARY_MultiFileFormat'"
@@ -51,6 +55,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_JSON_CSV_TXTchildItem'"
 		},
+		"LS_LKUP_MAX_VALUE_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_LKUP_MAX_VALUE'"
+		},
 		"LS_MULTIPLECSV_BLOB_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_MULTIPLECSV_BLOB'"
@@ -58,6 +66,10 @@
 		"LS_MULTIPLECSV_PARQUET_ADLS_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_MULTIPLECSV_PARQUET_ADLS'"
+		},
+		"LS_ONPRIM_SQL_ADLS_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_ONPRIM_SQL_ADLS'"
 		},
 		"LS_OUTPUT_JSON_accountKey": {
 			"type": "secureString",
@@ -79,6 +91,26 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_RestAPI_Parquet'"
 		},
+		"LS_SQLTBL_WATERMARK_DW_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQLTBL_WATERMARK_DW'"
+		},
+		"LS_SQL_ADLS_MIGR_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQL_ADLS_MIGR'"
+		},
+		"LS_SQL_ADLS_MOVE_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQL_ADLS_MOVE'"
+		},
+		"LS_SQL_TO_ADLS_Migration_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SQL_TO_ADLS_Migration'"
+		},
+		"LS_SQLtable_ADLS_load_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_SQLtable_ADLS_load'"
+		},
 		"LS_output_TXT_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_output_TXT'"
@@ -87,7 +119,15 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'SqlServer1'"
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://keyvaultsqlserver123.vault.azure.net/"
+		},
 		"DS_Output_CSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_ADLS_SqlTable_Parquet_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
@@ -99,9 +139,33 @@
 			"type": "string",
 			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Maheshwaran"
+		},
 		"LS_MULTIPLECSV_PARQUET_ADLS_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_ONPRIM_SQL_ADLS_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_ONPRIM_SQL_ADLS_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_ONPRIM_SQL_ADLS_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Maheshwaran"
 		},
 		"LS_OUTPUT_JSON_properties_typeProperties_url": {
 			"type": "string",
@@ -120,6 +184,50 @@
 			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
 		"LS_RestAPI_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Maheshwaran"
+		},
+		"LS_SQL_ADLS_MIGR_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_MOVE_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQL_ADLS_MOVE_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_SQL_ADLS_MOVE_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Maheshwaran"
+		},
+		"LS_SQL_TO_ADLS_Migration_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQL_TO_ADLS_Migration_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "RetailDW_Dev"
+		},
+		"LS_SQL_TO_ADLS_Migration_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Maheshwaran"
+		},
+		"LS_SQLtable_ADLS_load_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
@@ -168,6 +276,9 @@
 					},
 					"DS_Output_CSV_accountKey": {
 						"value": "[parameters('DS_Output_CSV_accountKey')]"
+					},
+					"LS_ADLS_SqlTable_Parquet_accountKey": {
+						"value": "[parameters('LS_ADLS_SqlTable_Parquet_accountKey')]"
 					},
 					"LS_BINARY_MultiFileFormat_connectionString": {
 						"value": "[parameters('LS_BINARY_MultiFileFormat_connectionString')]"
@@ -220,11 +331,14 @@
 					"LS_RestAPI_Parquet_accountKey": {
 						"value": "[parameters('LS_RestAPI_Parquet_accountKey')]"
 					},
-					"LS_output_TXT_accountKey": {
-						"value": "[parameters('LS_output_TXT_accountKey')]"
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
 					"DS_Output_CSV_properties_typeProperties_url": {
 						"value": "[parameters('DS_Output_CSV_properties_typeProperties_url')]"
+					},
+					"LS_ADLS_SqlTable_Parquet_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_SqlTable_Parquet_properties_typeProperties_url')]"
 					},
 					"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url')]"
@@ -249,9 +363,6 @@
 					},
 					"LS_RestAPI_Parquet_properties_typeProperties_url": {
 						"value": "[parameters('LS_RestAPI_Parquet_properties_typeProperties_url')]"
-					},
-					"LS_output_TXT_properties_typeProperties_url": {
-						"value": "[parameters('LS_output_TXT_properties_typeProperties_url')]"
 					}
 				}
 			},
@@ -271,8 +382,86 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"LS_SQL_ADLS_MIGR_accountKey": {
+						"value": "[parameters('LS_SQL_ADLS_MIGR_accountKey')]"
+					},
+					"LS_SQLtable_ADLS_load_accountKey": {
+						"value": "[parameters('LS_SQLtable_ADLS_load_accountKey')]"
+					},
+					"LS_output_TXT_accountKey": {
+						"value": "[parameters('LS_output_TXT_accountKey')]"
+					},
+					"LS_LKUP_MAX_VALUE_password": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_password')]"
+					},
+					"LS_ONPRIM_SQL_ADLS_password": {
+						"value": "[parameters('LS_ONPRIM_SQL_ADLS_password')]"
+					},
+					"LS_SQLTBL_WATERMARK_DW_password": {
+						"value": "[parameters('LS_SQLTBL_WATERMARK_DW_password')]"
+					},
+					"LS_SQL_ADLS_MOVE_password": {
+						"value": "[parameters('LS_SQL_ADLS_MOVE_password')]"
+					},
+					"LS_SQL_TO_ADLS_Migration_password": {
+						"value": "[parameters('LS_SQL_TO_ADLS_Migration_password')]"
+					},
 					"SqlServer1_password": {
 						"value": "[parameters('SqlServer1_password')]"
+					},
+					"LS_SQL_ADLS_MIGR_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQL_ADLS_MIGR_properties_typeProperties_url')]"
+					},
+					"LS_SQLtable_ADLS_load_properties_typeProperties_url": {
+						"value": "[parameters('LS_SQLtable_ADLS_load_properties_typeProperties_url')]"
+					},
+					"LS_output_TXT_properties_typeProperties_url": {
+						"value": "[parameters('LS_output_TXT_properties_typeProperties_url')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_server')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_database')]"
+					},
+					"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_LKUP_MAX_VALUE_properties_typeProperties_userName')]"
+					},
+					"LS_ONPRIM_SQL_ADLS_properties_typeProperties_server": {
+						"value": "[parameters('LS_ONPRIM_SQL_ADLS_properties_typeProperties_server')]"
+					},
+					"LS_ONPRIM_SQL_ADLS_properties_typeProperties_database": {
+						"value": "[parameters('LS_ONPRIM_SQL_ADLS_properties_typeProperties_database')]"
+					},
+					"LS_ONPRIM_SQL_ADLS_properties_typeProperties_userName": {
+						"value": "[parameters('LS_ONPRIM_SQL_ADLS_properties_typeProperties_userName')]"
+					},
+					"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQLTBL_WATERMARK_DW_properties_typeProperties_server')]"
+					},
+					"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQLTBL_WATERMARK_DW_properties_typeProperties_database')]"
+					},
+					"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQLTBL_WATERMARK_DW_properties_typeProperties_userName')]"
+					},
+					"LS_SQL_ADLS_MOVE_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQL_ADLS_MOVE_properties_typeProperties_server')]"
+					},
+					"LS_SQL_ADLS_MOVE_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQL_ADLS_MOVE_properties_typeProperties_database')]"
+					},
+					"LS_SQL_ADLS_MOVE_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQL_ADLS_MOVE_properties_typeProperties_userName')]"
+					},
+					"LS_SQL_TO_ADLS_Migration_properties_typeProperties_server": {
+						"value": "[parameters('LS_SQL_TO_ADLS_Migration_properties_typeProperties_server')]"
+					},
+					"LS_SQL_TO_ADLS_Migration_properties_typeProperties_database": {
+						"value": "[parameters('LS_SQL_TO_ADLS_Migration_properties_typeProperties_database')]"
+					},
+					"LS_SQL_TO_ADLS_Migration_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SQL_TO_ADLS_Migration_properties_typeProperties_userName')]"
 					},
 					"SqlServer1_properties_typeProperties_server": {
 						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"
@@ -287,6 +476,26 @@
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Resources/deployments', 'DATAFACTORY-BLOB-TO-ADLSGENTWO_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "DATAFACTORY-BLOB-TO-ADLSGENTWO_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'DATAFACTORY-BLOB-TO-ADLSGENTWO_ArmTemplate_1')]"
 			]
 		}
 	]

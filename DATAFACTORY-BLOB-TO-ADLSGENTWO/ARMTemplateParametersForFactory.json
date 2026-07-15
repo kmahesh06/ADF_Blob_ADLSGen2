@@ -8,6 +8,9 @@
 		"DS_Output_CSV_accountKey": {
 			"value": ""
 		},
+		"LS_ADLS_SqlTable_Parquet_accountKey": {
+			"value": ""
+		},
 		"LS_BINARY_MultiFileFormat_connectionString": {
 			"value": ""
 		},
@@ -38,10 +41,16 @@
 		"LS_JSON_CSV_TXTchildItem_connectionString": {
 			"value": ""
 		},
+		"LS_LKUP_MAX_VALUE_password": {
+			"value": ""
+		},
 		"LS_MULTIPLECSV_BLOB_connectionString": {
 			"value": ""
 		},
 		"LS_MULTIPLECSV_PARQUET_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_ONPRIM_SQL_ADLS_password": {
 			"value": ""
 		},
 		"LS_OUTPUT_JSON_accountKey": {
@@ -59,13 +68,34 @@
 		"LS_RestAPI_Parquet_accountKey": {
 			"value": ""
 		},
+		"LS_SQLTBL_WATERMARK_DW_password": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_MIGR_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_ADLS_MOVE_password": {
+			"value": ""
+		},
+		"LS_SQL_TO_ADLS_Migration_password": {
+			"value": ""
+		},
+		"LS_SQLtable_ADLS_load_accountKey": {
+			"value": ""
+		},
 		"LS_output_TXT_accountKey": {
 			"value": ""
 		},
 		"SqlServer1_password": {
 			"value": ""
 		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://keyvaultsqlserver123.vault.azure.net/"
+		},
 		"DS_Output_CSV_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_ADLS_SqlTable_Parquet_properties_typeProperties_url": {
 			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
 		"LS_CSV_PARQUET_OUTPUT_properties_typeProperties_url": {
@@ -74,8 +104,26 @@
 		"LS_Filenamebased_Copy_output_properties_typeProperties_url": {
 			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"value": "Maheshwaran"
+		},
 		"LS_MULTIPLECSV_PARQUET_ADLS_properties_typeProperties_url": {
 			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_ONPRIM_SQL_ADLS_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_ONPRIM_SQL_ADLS_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_ONPRIM_SQL_ADLS_properties_typeProperties_userName": {
+			"value": "Maheshwaran"
 		},
 		"LS_OUTPUT_JSON_properties_typeProperties_url": {
 			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
@@ -90,6 +138,39 @@
 			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
 		"LS_RestAPI_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_SQLTBL_WATERMARK_DW_properties_typeProperties_userName": {
+			"value": "Maheshwaran"
+		},
+		"LS_SQL_ADLS_MIGR_properties_typeProperties_url": {
+			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
+		},
+		"LS_SQL_ADLS_MOVE_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQL_ADLS_MOVE_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_SQL_ADLS_MOVE_properties_typeProperties_userName": {
+			"value": "Maheshwaran"
+		},
+		"LS_SQL_TO_ADLS_Migration_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQL_TO_ADLS_Migration_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_SQL_TO_ADLS_Migration_properties_typeProperties_userName": {
+			"value": "Maheshwaran"
+		},
+		"LS_SQLtable_ADLS_load_properties_typeProperties_url": {
 			"value": "https://adlsstoragefordemo.dfs.core.windows.net/"
 		},
 		"LS_output_TXT_properties_typeProperties_url": {
