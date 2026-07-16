@@ -11,7 +11,7 @@
 			"trustServerCertificate": false,
 			"authenticationType": "Windows",
 			"userName": "Maheshwaran",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0YzIzYzA2Mi01Yjg0LTRmY2ItYmQ0YS1kMGQwNWRiY2YxNWIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIzMzc4ZGVmNy01YzlmLTRlNWEtYjJmOC0zMjM5MjQ0MzJmMTAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "selfhostedintegrationRuntime1",
